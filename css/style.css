@@ -1,0 +1,34 @@
+.underline { border-bottom: 1px solid red; }
+.text-holder {
+	margin: 0 auto;
+	max-width: 1050px;
+	font-family: 'Lato', sans-serif;
+}
+#sentence { margin: .25em; }
+#textinput { width: 100%; }
+#check { 
+	margin: 0.5em 0; 
+	color: white;
+	background: #1376d3;
+	width: 150px; 
+	text-align: center;
+	padding: 1em;
+	font-size: 1.25em;
+}
+.addButton { 
+	background: #ce3d3d;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 4px;
+	margin: 2px;
+	color: white;
+	cursor: pointer; 
+	width: 15%;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+.added { display: none; }
+#misWords { 
+	display: flex;
+	flex-flow: column;
+}
