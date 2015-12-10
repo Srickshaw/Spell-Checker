@@ -3,8 +3,8 @@ var misWords = [];
 var misWordsDiv = document.querySelector("#misWords");
 function spellCheck(wArray, dictionary, divID) {			
 	for (var i = 0; i < wArray.length; i++) {														
-		if(dictionary.hasOwnProperty(wArray[i].replace(/[.,-\/#!\?$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase()) === false) {
-			misWords.push(wArray[i].replace(/[.,-\/#!\?$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase());
+		if(dictionary.hasOwnProperty(wArray[i].replace(/[.,-\/#!/"\?$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase()) === false) {
+			misWords.push(wArray[i].replace(/[.,-\/#!/"\?$%\^&\*;:{}=\-_`~()]/g,"").toLowerCase());
 			wArray[i] = '<span class="underline">' + wArray[i] + '</span>'
 		}			   
 	}
